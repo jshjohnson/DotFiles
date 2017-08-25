@@ -1,1 +1,32 @@
-/Users/joshjohnson/.gitconfig
+[user]
+	name = Josh Johnson
+	email = josh@joshuajohnson.co.uk
+[core]
+	excludesfile = /Users/joshjohnson/.gitignore
+	quotepath = false
+	editor = nano
+[push]
+	default = matching
+[color]
+	ui = true
+[alias]
+    ci   = commit
+	co   = checkout
+	ci   = commit
+	st   = status
+	br   = branch -av
+	fo   = fetch origin
+	mod  = merge origin/develop
+	mos  = merge origin/staging
+	mom  = merge origin/master
+	pod  = push origin develop
+	pos  = push origin staging		
+	pom  = push origin master
+	pso  = push origin
+	plo  = pull origin
+ 	fu   = fetch upstream
+	mum  = merge upstream/master
+	updatesub = submodule foreach git pull origin master
+
+[credential]
+	helper = osxkeychain
